@@ -35,3 +35,34 @@ b = int(input('Enter a number: '))
 print(isprime(b))
 print(primesupto(b))
 print(nprimes(b))
+
+
+# ANOTHER METHOD
+def prime(a):
+    if a <= 0:
+        return False
+
+    if a == 2:
+        return True
+
+    for i in range(2, int(a**0.5)+1):
+        if a % i == 0:
+            return False
+    else:
+        return True
+
+
+# a = int(input())
+# if prime(a) == True:
+#     print("prime")
+# else:
+#     print("not prime")
+
+
+m = int(input())
+n = int(input())
+
+
+for i in range(m, n+1):
+    if prime(i) == True:
+        print(i)
