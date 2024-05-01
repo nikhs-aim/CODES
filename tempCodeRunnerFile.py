@@ -1,8 +1,10 @@
-def armstrong(num):
-    if num == sum_of_digits(num):
-        print("Armstrong number")
+def harshad_num(num):
+    sum_of_num = sum_of_digits(num)
+    if sum_of_num % num == 0:
+        print("harshad number")
+
     else:
-        print("Not an Armstrong number")
+        print("not harshad number")
 
 
-armstrong(153)
+harshad_num(18)

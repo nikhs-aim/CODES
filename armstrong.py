@@ -33,9 +33,16 @@ def sum_of_digits(num):
 
 def armstrong(num):
     if num == sum_of_digits(num):
-        print("Armstrong number")
+        return True
     else:
-        print("Not an Armstrong number")
+        return False
 
 
-armstrong(153)
+def range_armstrong(a, b):
+    for i in range(a, b+1):
+        if armstrong(i) == True:
+            print(i)
+
+
+range_armstrong(1, 153)
+# armstrong(153)
